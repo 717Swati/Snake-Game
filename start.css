@@ -2,9 +2,6 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    color: rgb(157, 7, 157);
-    font-size: 50px;
-    text-decoration: underline;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -25,38 +22,17 @@ h1 {
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
-    margin-top: 2px;
+    /* margin-top: 2px; */
+    font-size: 70px;
+    text-decoration: underline;
+
 }
 
-.start {
-    padding: 10px;
-    position: absolute;
-    right: 550px;
-    bottom: 20px;
-    background-color: aqua;
-    font-weight: bold;
-    border: 5px solid yellow;
-    border-radius: 20px;
-}
-
-a {
+h3 {
+    background: linear-gradient(to left, rgb(250, 143, 143), rgb(220, 248, 85));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 60px;
     text-decoration: none;
-}
-
-@media only screen and (max-width: 600px) {
-    .start {
-        position: relative;
-        top: 50px;
-        /* Adjust these values as needed */
-        left: 50px;
-        /* Adjust these values as needed */
-    }
-
-    a {
-        color: red;
-    }
-
-    body {
-        background-color: aqua;
-    }
+    margin-top: 0px;
 }
