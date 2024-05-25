@@ -5,10 +5,10 @@ let food = { x: 5, y: 7 };
 let score = 0;
 
 //Music
-const foodsound = new Audio("music/food.mp3");
-const gameoversound = new Audio("music/gameover.mp3");
-const movesound = new Audio("music/move.mp3");
-const musicsound = new Audio("music/music.mp3");
+const foodsound = new Audio("Music/food.mp3");
+const gameoversound = new Audio("Music/gameover.mp3");
+const movesound = new Audio("Music/move.mp3");
+const musicsound = new Audio("Music/music.mp3");
 
 //Game Loop
 let speed = 5;
