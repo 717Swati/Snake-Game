@@ -105,33 +105,38 @@ function gameEngine() {
 }
 
 //main Logic
+let count = JSON.parse(localStorage.getItem("score"));
 musicsound.play();
 window.requestAnimationFrame(main);
-
-window.addEventListener("keydown", (s) => {
+window.addEventListener("keydown", (e) => {
     inputdir = { x: 0, y: 1 };
     movesound.play();
-
-    switch (s.key) {
-        case "ArrowUp":
-            inputdir.x = 0;
-            inputdir.y = -1;
-            break;
-        case "ArrowDown":
-            inputdir.x = 0;
-            inputdir.y = 1;
+    switch (e.key) {
+        case "ArrowRight":
+            inputdir.x = 1;
+            inputdir.y = 0;
             break;
         case "ArrowLeft":
             inputdir.x = -1;
             inputdir.y = 0;
             break;
-        case "ArrowRight":
-            inputdir.x = 1;
-            inputdir.y = 0;
+
+        case "ArrowDown":
+            inputdir.x = 0;
+            inputdir.y = 1;
+            break;
+
+        case "ArrowUp":
+            inputdir.x = 0;
+            inputdir.y = -1;
             break;
     }
 });
 
+document.querySelector(".down").addEventListener("click", () => {
+    inputDir.x = 0;
+    inputDir.y = 1;
+});
 document.querySelector(".left").addEventListener("click", () => {
     inputdir.x = -1;
     inputdir.y = 0;
