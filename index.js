@@ -132,3 +132,19 @@ window.addEventListener("keydown", (s) => {
     }
 });
 
+document.querySelector(".left").addEventListener("click", () => {
+  inputDir.x = -1;
+  inputDir.y = 0;
+});
+document.querySelector(".right").addEventListener("click", () => {
+  inputDir.x = 1;
+  inputDir.y = 0;
+});
+document.querySelector(".up").addEventListener("click", () => {
+  inputDir.x = 0;
+  inputDir.y = -1;
+});
+document.querySelector(".down").addEventListener("click", () => {
+  inputDir.x = 0;
+  inputDir.y = 1;
+});
