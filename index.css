@@ -122,5 +122,6 @@ a {
     .back {
         width: 220px;
         height: 40px;
+        left: 100px;
     }
 }
