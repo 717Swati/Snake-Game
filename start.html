@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="main">
+        <p class="scorebox">Score=0</p>
+
+        <div id="board"></div>
+    </div>
+    <div class="button-control">
+        <div class="control-lr">
+            <button class="left" onclick="mobile_play(L)">L</button>
+            <button class="right" onclick="mobile_play(R)">R</button>
+        </div>
+        <div class="control-UD">
+            <button class="up" onclick="mobile_play(U)">U</button>
+            <button class="down" onclick="mobile_play(D)">D</button>
+        </div>
+    </div>
+    <center><button class="back"><a href="index.html">Press Here To Go Back</a></button></center>
+    <script src="index.js"></script>
+</body>
+
+</html>

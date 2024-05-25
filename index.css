@@ -1,0 +1,120 @@
+body {
+    padding: 0p;
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+#board {
+    height: 84vmin;
+    width: 85vmin;
+    margin: 30px;
+    background: linear-gradient(65deg, rgb(19, 194, 247), rgb(243, 42, 203));
+    border: 15px solid red;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scorebox {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back {
+    position: absolute;
+    right: 125px;
+    bottom: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    width: 120px;
+    background-color: aqua;
+    border: 5px solid whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head {
+    background: linear-gradient(yellow, red);
+    border: 1.2vmin solid black;
+    border-radius: 50px;
+}
+
+.food {
+    background: linear-gradient(green, yellow);
+    border: 0.25vmin solid black;
+    border-radius: 15px;
+}
+
+.snake {
+    background-color: rgb(255, 189, 47);
+    border: 0.25vmin solid black;
+    border-radius: 50px;
+}
+
+
+
+.button-control {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .box {
+        margin-top: 20px;
+    }
+
+    .button-control {
+        display: inline-block;
+    }
+
+    .control-lr {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        margin-top: 80px;
+        margin-left: 50px;
+    }
+
+    .control-UD {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        width: 50px;
+        margin-left: 160px;
+        margin-top: 10px;
+    }
+
+    .up {
+        margin-top: -140px;
+
+    }
+
+    .up,
+    .down,
+    .left,
+    .right {
+        font-size: 50px;
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+        background: linear-gradient(45deg, green, purple);
+    }
+
+    .scorebox {
+        top: 630px;
+        left: 30px;
+    }
+}
