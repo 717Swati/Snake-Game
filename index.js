@@ -153,3 +153,11 @@ document.querySelector(".down").addEventListener("click", () => {
     inputdir.x = 0;
     inputdir.y = 1;
 });
+// Start playing music on the first interaction to comply with mobile policies
+window.addEventListener("click", () => {
+    musicsound.play();
+}, { once: true });
+
+window.addEventListener("touchstart", () => {
+    musicsound.play();
+}, { once: true });
